@@ -33,9 +33,9 @@
 
             display-name = "Base";
             bindings = <
-&caps_word  &kp Q                     &kp W                   &kp E                     &kp R                 &kp T        &kp Y    &kp U                  &kp I                      &kp O                    &kp P                         &trans
+&caps_word  &kp Q                     &kp W                   &kp E                     &kp R                 &kp T        &kp Z    &kp U                  &kp I                      &kp O                    &kp P                         &trans
 &kp ESC     &hold_tap LEFT_CONTROL A  &hold_tap LEFT_SHIFT S  &hold_tap LEFT_COMMAND D  &hold_tap LEFT_ALT F  &kp G        &kp H    &hold_tap RIGHT_ALT J  &hold_tap RIGHT_COMMAND K  &hold_tap RIGHT_SHIFT L  &hold_tap RIGHT_CONTROL SEMI  &kp SQT
-&kp TAB     &kp Z                     &kp X                   &kp C                     &kp V                 &kp B        &kp N    &kp M                  &kp COMMA                  &kp DOT                  &kp FSLH                      &trans
+&kp TAB     &kp Y                     &kp X                   &kp C                     &kp V                 &kp B        &kp N    &kp M                  &kp COMMA                  &kp DOT                  &kp FSLH                      &to 3
                                                               &kp TAB                   &mo 2                 &kp SPACE    &kp RET  &kp BACKSPACE          &mo 1
             >;
         };
@@ -72,16 +72,18 @@
             >;
         };
 
-        extra_1 {
-            status = "reserved";
+        colemak_layer {
+            display-name = "Colemak";
+            bindings = <
+&caps_word  &kp Q                     &kp W                   &kp F                     &kp P                 &kp B        &kp J    &kp L                  &kp U                      &kp Y                    &kp SEMICOLON              &trans
+&kp ESC     &hold_tap LEFT_CONTROL A  &hold_tap LEFT_SHIFT R  &hold_tap LEFT_COMMAND S  &hold_tap LEFT_ALT T  &kp G        &kp M    &hold_tap RIGHT_ALT N  &hold_tap RIGHT_COMMAND E  &hold_tap RIGHT_SHIFT I  &hold_tap RIGHT_CONTROL O  &kp SQT
+&kp TAB     &kp Z                     &kp X                   &kp C                     &kp D                 &kp V        &kp K    &kp H                  &kp COMMA                  &kp DOT                  &kp FSLH                   &to 0
+                                                              &kp TAB                   &mo 2                 &kp SPACE    &kp RET  &kp BACKSPACE          &mo 1
+            >;
         };
 
-        extra_2 {
-            status = "reserved";
-        };
+        extra_2 { status = "reserved"; };
 
-        extra_3 {
-            status = "reserved";
-        };
+        extra_3 { status = "reserved"; };
     };
 };
