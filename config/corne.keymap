@@ -81,9 +81,5 @@
                                           &kp TAB     &trans        &kp SPACE       &kp RET    &kp BACKSPACE  &trans
             >;
         };
-
-        extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
     };
 };
